@@ -30,6 +30,19 @@
       aside {
         padding: 24px;
       }
+      button {
+        position: inline-block;
+        font-size: 16px;
+        background-color: #5f3dc4;
+        border: none;
+        cursor: pointer;
+        color: #fff;
+        padding: 8px 12px;
+      }
+      button:last-child {
+        background-color: #d6336c;
+        margin-left: auto;
+      }
       nav {
         background-color: #343a40;
         grid-row: 1/-1;
@@ -39,16 +52,40 @@
         background-color: #7048e8;
         color: #fff;
         grid-column: 2/-1;
+        display: flex;
+        align-items: center;
+        gap: 12px;
       }
+
       section {
         background-color: #e9ecef;
       }
       aside {
         background-color: #e9ecef;
       }
-      .emails {
+      .emails-all {
+        background-color: #868e96;
+        height: 30px;
+        width: 40px;
+      }
+      /* .emails-one {
         background-color: #868e96;
       }
+      .emails-two{
+        background-color: #868e96;
+      }
+      .emails-three{
+        background-color: #868e96;
+      }
+      .emails-four{background-color: #868e96;
+
+      }
+      .emails-five{background-color: #868e96;
+
+      }
+      .emails-six{background-color: #868e96;
+
+      } */
     </style>
   </head>
   <!-- in every web application, 
@@ -57,15 +94,16 @@
     view and addditional info  -->
   <body>
     <nav>Nav</nav>
-    <menu>Menu</menu>
+    <menu>
+      <button>New</button>
+      <button>Reply</button>
+      <button>Forward</button>
+      <button>Mark unread</button>
+      <button>Trash</button>
+    </menu>
     <section>
       <div class="emails-all">
-        <div class="emails">Email 1</div>
-        <div class="emails">Email 2</div>
-        <div class="emails">Email 3</div>
-        <div class="emails">Email 4</div>
-        <div class="emails">Email 5</div>
-        <div class="emails">Email 6</div>
+        <button></button>
       </div>
     </section>
     <main>Email view</main>
