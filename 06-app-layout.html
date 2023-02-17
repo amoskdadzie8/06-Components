@@ -59,33 +59,26 @@
 
       section {
         background-color: #e9ecef;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+        overflow: scroll;
       }
       aside {
         background-color: #e9ecef;
       }
-      .emails-all {
+      .email {
         background-color: #868e96;
-        height: 30px;
-        width: 40px;
+        height: 96px;
+        width: 300px;
+        flex-shrink: 0;
+        padding: 24[x];
+        /* width: 70px;
+        padding: 20px; */
       }
-      /* .emails-one {
-        background-color: #868e96;
-      }
-      .emails-two{
-        background-color: #868e96;
-      }
-      .emails-three{
-        background-color: #868e96;
-      }
-      .emails-four{background-color: #868e96;
-
-      }
-      .emails-five{background-color: #868e96;
-
-      }
-      .emails-six{background-color: #868e96;
-
-      } */
     </style>
   </head>
   <!-- in every web application, 
@@ -102,9 +95,16 @@
       <button>Trash</button>
     </menu>
     <section>
-      <div class="emails-all">
-        <button></button>
-      </div>
+      <div class="email">Email 1</div>
+      <div class="email">Email 2</div>
+      <div class="email">Email 3</div>
+      <div class="email">Email 4</div>
+      <div class="email">Email 5</div>
+      <div class="email">Email 6</div>
+      <div class="email">Email 7</div>
+      <div class="email">Email 8</div>
+      <div class="email">Email 9</div>
+      <div class="email">Email 10</div>
     </section>
     <main>Email view</main>
     <aside>Additional Info.</aside>
